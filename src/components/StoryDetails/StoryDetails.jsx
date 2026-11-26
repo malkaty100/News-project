@@ -8,5 +8,12 @@ import styles from './StoryDetails.module.css'
  */
 export default function StoryDetails({ story }) {
   // TODO: show the image (or the default image), the description and the content (the title is welcome too)
-  return null
+  const defaultImg="src/assets/default-news.svg"
+  return <div>
+    <h3>{story.title}</h3> 
+     <img src={story.urlToImage||defaultImg}/> 
+     <h4>{story.description}</h4> 
+     <p>{story.content}</p>
+
+  </div>
 }

@@ -12,5 +12,10 @@ import styles from './NewsStory.module.css'
 export default function NewsStory({ author, title, urlToImage, onClick }) {
   // TODO: a card (styles.card) with an <img>, the title and the author
   // TODO: clicking the card calls onClick
-  return null
+   const defaultImg="../src/assets/default-news.svg"
+  return <article className={styles.card} onClick={onClick}>
+    <img src={urlToImage||defaultImg}/>
+    <h3>{title}</h3>
+    <span>{author}</span>
+  </article>
 }

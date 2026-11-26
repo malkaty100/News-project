@@ -8,5 +8,8 @@ import styles from './Navbar.module.css'
  */
 export default function Navbar({ onNavigate }) {
   // TODO: a <nav> with the site name and two buttons: "Home" and "Create Story"
-  return null
+  return <nav>
+    <button onClick={()=>{onNavigate("home")}}>Home</button>
+    <button onClick={()=>{onNavigate("create")}}>Create Story</button>
+  </nav>
 }
