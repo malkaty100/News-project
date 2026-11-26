@@ -1,0 +1,16 @@
+/* Global styles. Design the site here and in the *.module.css files of the components. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
